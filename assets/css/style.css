@@ -82,7 +82,7 @@ body::before{
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
 .eyebrow.center-line::after{content:"";width:26px;height:2px;background:var(--grad);border-radius:2px}
 
-h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.98;letter-spacing:.01em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.1;letter-spacing:.01em;text-transform:uppercase}
 .h-xl{font-size:clamp(2.7rem,7.5vw,6rem)}
 .h-lg{font-size:clamp(2.1rem,5vw,4rem)}
 .h-md{font-size:clamp(1.6rem,3vw,2.6rem)}
@@ -381,6 +381,9 @@ h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:.98;letter-
 /* three looping videos as the promise background (left / middle / right) */
 .pr-videos{position:absolute;inset:0;z-index:-3;display:flex;overflow:hidden}
 #promiseReveal .pr-bg img{object-position:center}
+/* homepage promise heading: raised + a bit larger/dominant */
+.promise-reveal--home .sec-head{margin-bottom:clamp(58px,8vw,98px);transform:translateY(-12px)}
+.promise-reveal--home .sec-head .h-md{font-size:clamp(2.5rem,5vw,4rem);line-height:1.1}
 #promiseReveal .pr-note{position:relative;isolation:isolate;text-shadow:0 2px 8px rgba(0,0,0,.85)}
 #promiseReveal .pr-note::before{content:"";position:absolute;z-index:-1;left:50%;top:50%;translate:-50% -50%;
   width:min(680px,116%);height:340%;pointer-events:none;border-radius:50%;filter:blur(22px);
